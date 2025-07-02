@@ -8,8 +8,14 @@
     src: url(fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf)
 }
 
+@media screen and (max-width: 600px){
+    aside, section, article{
+        width: 100%;
+    }
+}
+
 *{
-    box-sizing: border-box;
+    box-sizing: border-box;  
 }
 
 body{
@@ -17,21 +23,51 @@ body{
     margin: 0;
 }
 
+#topline{
+    border: 2px solid rgb(252, 172, 0);
+    padding: 0px;
+    margin: 0px;
+}
+
 .navbar ul{
     padding: 15px;
     margin: 0px;
     list-style-type: none;
     overflow: hidden;
+    border-bottom: 1px solid lightgrey;
 }
 
-.navbar li{
-    float: left;
-    padding: 15px;
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+    padding: 6px;
+}
+
+.navbar a:hover{
+    background-color: lightgrey;
+    border-radius: 15px;
 }
 
 .navbar #NameInNavbar{
     font-weight: 600;
-    color:rgb(80, 164, 237);
-    font-size: 20px;
-    padding: 30px;
+    color: rgb(87, 87, 87);
+    font-size: 25px;
+    padding-right: 12px;
+    padding-top:15px;
+}
+
+.navbar #ContactMe{
+    float:right;
+    color: white;
+    background-color: rgb(33, 148, 249);
+    border-radius: 5px;
+    padding: 6px;
+    margin-top:3px
+}
+
+.navbar #ContactMe:hover{
+    float:right;
+    color: white;
+    background-color: rgba(33, 148, 249, 0.792);
+    border-radius: 5px;
 }
