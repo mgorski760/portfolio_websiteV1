@@ -1,0 +1,136 @@
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*list style type removes the bullet points*/
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    /*
+    overflow determines if the internal element needs scroll or 
+    not. hidden disables scroll.
+    */
+    overflow: hidden;
+}
+
+.navbar li{
+    margin: 15px;
+    align-self: center;
+}
+
+.navbar .logo{
+    font-size: 1.4em;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+.navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+    border-radius: 25px;
+}
+
+.navbar a:hover{
+    background-color: rgb(74, 74, 74);
+}
+
+
+/////////////////////////////////////////////
+
+@font-face{
+    font-family: Nurito;
+    src: url(fonts/Nunito/Nunito-VariableFont_wght.ttf)
+}
+
+@font-face{
+    font-family: Nurito-Italic;
+    src: url(fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf)
+}
+/*For screensize smaller than 600px, make all the navbar elements besides the first child display: none*/
+@media screen and (max-width: 600px){
+    .navbar li:not(:first-child){display: none;}
+
+}
+
+*{
+    box-sizing: border-box;  
+}
+
+body{
+    background-color: rgba(0,18,32,255);
+    font-family: Nurito;
+    margin: 0px;
+}
+
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*list style type removes the bullet points*/
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    /*
+    overflow determines if the internal element needs scroll or 
+    not. hidden disables scroll.
+    */
+    overflow: hidden;
+}
+
+.navbar ul li.icon {
+    display: none;
+}
+
+.navbar li{
+    margin: 10px;
+    align-self: center;
+}
+
+.navbar li.logo{
+    font-size: 1.4em;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+.navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+    border-radius: 25px;
+}
+
+.navbar a:hover{
+    background-color: rgb(74, 74, 74);
+}
+
+<nav class="navbar">
+            <ul>
+                <li class="logo">Marcin Gorski</li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Resume</a></li>
+                <li><a href="">Projects</a></li>
+                <li class="contact"><a href="">Contact</a></li>
+                <li class="icon"><a href="javascript:void(0);" onclick="toggleMenu()">☰</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+            }
+        </script>

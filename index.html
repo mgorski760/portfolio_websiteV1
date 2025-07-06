@@ -9,23 +9,37 @@
 <body>
 
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="nav">
             <ul>
                 <li class="logo">Marcin Gorski</li>
                 <li><a href="">Home</a></li>
                 <li><a href="">Resume</a></li>
                 <li><a href="">Projects</a></li>
-                <li style="float: right"><a class="contact" href="">Contact</a></li>
+                <li class="contact"><a href="">Contact</a></li>
+                <li class="icon"><a href="javascript:void(0);" onclick="ToggleDropdown()">☰</a></li>
             </ul>
         </nav>
+
+        <script>
+            function ToggleDropdown() {
+            var x = document.getElementById("nav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+            out.println(className);
+            }
+        </script>
+
     </header>
 
     <main>
-        
+        <p></p>
     </main>
 
     <footer>
-
+        
     </footer>
     
 </body>
