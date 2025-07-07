@@ -1,12 +1,28 @@
+/*---[GLOBAL]---*/
+
 @font-face{
-    font-family: Nurito;
+    font-family: Nunito;
     src: url(fonts/Nunito/Nunito-VariableFont_wght.ttf)
 }
 
 @font-face{
-    font-family: Nurito-Italic;
+    font-family: Nunito-Italic;
     src: url(fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf)
 }
+
+*{
+    box-sizing: border-box;  
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: Nunito;
+    margin: 0px;
+}
+
+/*---[HEADER SECTION]---*/
+
 /*For screensize smaller than 600px, make all the navbar elements besides the first child display: none*/
 @media screen and (max-width: 600px){
     /*Everything in the navbar besides the first child is hidden*/
@@ -16,10 +32,16 @@
         display: block;
     }
 }
-
+/*When icon is clicked "hamburger" program changes class css to ones listed below*/
 @media screen and (max-width: 600px){
-    .navbar.responsive {position: relative}
+    .navbar.responsive {
+        position: fixed;
+        width: 100%;
+        margin: 0px;
+    }
+
     .navbar.responsive .icon {
+        /*Keeps the icon to its a*/
         position: absolute;
         right: 0;
         top: 0;
@@ -32,31 +54,9 @@
     .navbar.responsive li {
         float: none;
         display: block;
-        text-align: right;
+        text-align: center;
     }
-}
 
-*{
-    box-sizing: border-box;  
-}
-
-body{
-    background-color: 	hsla(206, 100%, 6%, 1);
-    font-family: Nurito;
-    margin: 0px;
-}
-
-
-.navbar ul{
-    /*list style type removes the bullet points*/
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    /*
-    overflow determines if the internal element needs scroll or 
-    not. hidden disables scroll.
-    */
-    overflow: hidden;
 }
 
 .navbar .icon {
@@ -66,8 +66,21 @@ body{
 
 .navbar .icon a:hover {
     border-radius: 0px;
-    background-color: 	rgb(0, 35, 63);
+    background-color:hsl(207, 100%, 12%);
     border-radius: 5px;
+}
+
+.navbar ul{
+    background-color: hsl(207, 100%, 12%);
+    /*list style type removes the bullet points*/
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    /*
+    overflow determines if the internal element needs scroll or 
+    not. hidden disables scroll.
+    */
+    overflow: hidden;
 }
 
 .navbar li{
@@ -81,27 +94,39 @@ body{
 .navbar li.logo{
     font-size: 1.6em;
     color: rgb(255, 255, 255);
-    margin-left: 10px;
+    margin-left: 15px;
     white-space: nowrap;
 }
 
 .navbar a{
     font-size: 1.2em;
-    color: rgb(255, 255, 255);
+    color: rgb(225, 224, 224);
     text-decoration: none;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
     margin: 0px;
-    border-radius: 25px;
+    
 }
 
 .navbar a:hover{
-    background-color: rgb(74, 74, 74);
+    color: white;
+}
+
+/*---[MAIN]---*/
+
+main{
+
 }
 
 
+/*---[FOOTER]*/
 
-
-
+.footSVG{
+    background-image: url("./svg/layered1.svg");
+    background-size: cover;
+    background-position: bottom;
+    height: 1000px;
+    width: 100%;
+}
 
