@@ -10,9 +10,7 @@
     src: url(fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf)
 }
 
-*{
-    box-sizing: border-box;  
-}
+
 
 body{
     background-color: rgb(255, 255, 255);
@@ -32,9 +30,18 @@ body{
         /*Displays the element with dimensions and reserves the whitespace*/
         display: block;
     }
+
+    .navbar_container{
+        position: sticky;
+        top: 0px;
+    }
+    
+
 }
 /*When icon is clicked "hamburger" program changes class css to ones listed below*/
 @media screen and (max-width: 600px){
+
+    
     .navbar.responsive {
         /*Sets the positon of .navbar relative to it's normal place. 
         Used in this case to keep .icon (child) within's it bounds.*/
@@ -56,10 +63,16 @@ body{
     }
 }
 
+.navbar_container{
+    position: sticky;
+    top: 0px;
+}
+
 .navbar {
     /*Set to hide the overflowing elements within .navbar*/
     overflow: hidden;
     background-color: #333;
+    position: sticky;
 }
 
 .navbar a{
