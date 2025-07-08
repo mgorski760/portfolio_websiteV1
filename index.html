@@ -5,24 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
     <header>
-        <nav class="navbar" id="nav" alt="Navigation Bar">
-            <ul>
-                <li class="logo">Marcin Gorski</li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Resume</a></li>
-                <li><a href="">Projects</a></li>
-                <li class="contact"><a href="">Contact</a></li>
-                <li class="icon"><a href="javascript:void(0);" onclick="ToggleDropdown()">☰</a></li>
-            </ul>
+        <nav class="navbar" id="navigation" alt="Navigation Bar">
+            <a href="" class="logo">Marcin Gorski</a></li>
+            <a href="">Resume</a></li>
+            <a href="">Projects</a></li>
+            <a href="">Contact</a>
+            <a class="icon" href="javascript:void(0);" onclick="ToggleDropdown()"><i class="fa fa-bars"></i></a>
         </nav>
 
         <script>
             function ToggleDropdown() {
-            var x = document.getElementById("nav");
+            var x = document.getElementById("navigation");
             if (x.className === "navbar") {
                 x.className += " responsive";
             } else {
