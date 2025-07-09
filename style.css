@@ -63,16 +63,10 @@ body{
     }
 }
 
-.navbar_container{
-    position: sticky;
-    top: 0px;
-}
-
 .navbar {
     /*Set to hide the overflowing elements within .navbar*/
     overflow: hidden;
     background-color: #333;
-    position: sticky;
 }
 
 .navbar a{

@@ -1,0 +1,52 @@
+.navbar {
+    background-color: rgb(52, 52, 52);
+    border: 2px solid red;
+    position: relative;
+    padding: 16px;
+    height: 19px;
+}
+
+.navbar .nav_main {
+    border: 2px solid;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    display: flex;
+    top: 0px;
+    left: 0px;
+}
+
+.navbar .nav_main li{
+    padding: 14px 16px;
+}
+.navbar .nav_main a{
+    text-decoration: none;
+    background-color: grey;
+    padding: 7px;
+    border-radius: 25px;
+    color: white;
+}
+
+.navbar .nav_links{
+    border: 2px solid blue;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+}
+
+.navbar .nav_links li{
+    padding: 14px 16px;
+}
+
+.navbar .nav_links a{
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    padding: 7px;
+    border-radius: 25px;
+}
