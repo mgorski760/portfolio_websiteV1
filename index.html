@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/964931fdcc.js" crossorigin="anonymous"></script>
 </head>
-<body style="overflow: visible;">
+<body>
 
-    <header style="overflow: visible;">
-        <div class="navbar_container">
-            <nav class="navbar" id="navigation" alt="Navigation Bar">
-                <a href="" class="logo">Marcin Gorski</a></li>
-                <a href="">Resume</a></li>
-                <a href="">Projects</a></li>
-                <a href="">Contact</a>
-                <a class="icon" href="javascript:void(0);" onclick="ToggleDropdown()"><i class="fa fa-bars"></i></a>
-            </nav>
-        </div>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="logo">Marcin Gorski</li>
+                <li id="home"><a href="">Home</a>
+                <li id="about"><a href="">About</a></li>
+                <li id="resume"><a href="">Resume</a></li>
+                <li class="right"><a href=""><i class="fa-brands fa-github"></i></a></li>
+                <li ><a  href=""><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </nav>
 
         <script>
             function ToggleDropdown() {

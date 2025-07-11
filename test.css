@@ -34,7 +34,7 @@
     padding: 0px;
     margin: 0px;
     position: absolute;
-    display: flex;
+    display: block;
     top: 0;
     right: 0;
 }
