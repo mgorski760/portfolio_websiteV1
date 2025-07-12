@@ -21,7 +21,7 @@ body{
 
 /*---[HEADER SECTION]---*/
 
-/*For screensize smaller than 600px, make all the navbar elements besides the first child display: none*/
+/*MAIN HORIZONTAL NAVIGATION BAR */
 
 .navbar .main_navlist{
     display: flex;
@@ -37,7 +37,7 @@ body{
     margin-right: 5px;
 }
 
-.navbar  a{
+.navbar a{
     text-decoration: none;
     text-align: center;
     color: black;
@@ -72,6 +72,7 @@ body{
 
 .navbar .main_navlist .icon_buttons a{
     padding: 0px;
+    transition: 0.2s;
 }
 
 .navbar .main_navlist .dropdown_icon{
@@ -81,10 +82,13 @@ body{
     margin-left: 10px;
 }
 
+/*VERTICAL DROPDOWN MENU*/
+
 .vertical_navlist{
-    border-bottom: 2px solid rgb(147, 147, 147);
+    background-color: rgb(231, 231, 231);
+    border-bottom: 4px solid rgb(206, 206, 206);
     display: none;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     text-decoration: none;
     list-style-type: none;
@@ -93,21 +97,24 @@ body{
 
 .vertical_navlist li{
     padding: 2px 7px; 
+    margin-top: 3px;
 }
 
 
 .vertical_navlist a{
     padding: 0px;
+    font-size: 1.2em;
 }
 
+/*When the screen size is less than 600px, remove main buttons
+and display dropdown icon (hamburger)*/
 @media screen and (max-width: 600px){
     .navbar .main_buttons{display: none;}
 
-    .navbar .main_navlist .dropdown_icon{
-        display: flex;
-    }
+    .navbar .main_navlist .dropdown_icon{display: flex;}
 }
 
+/*When dropdown icon is pressed, display vertical ul (vertical dropdown)l*/
 @media screen and (max-width: 600px){
    .navbar.responsive .vertical_navlist{
         display: flex;
