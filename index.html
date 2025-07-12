@@ -10,14 +10,15 @@
 <body>
 
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="navigation">
             <ul>
-                <li class="logo">Marcin Gorski</li>
-                <li id="home"><a href="">Home</a>
-                <li id="about"><a href="">About</a></li>
-                <li id="resume"><a href="">Resume</a></li>
-                <li class="right"><a href=""><i class="fa-brands fa-github"></i></a></li>
-                <li ><a  href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><span class="logo">Marcin Gorski</span></li>
+                <li class="main_buttons"><a href="">Home</a>
+                <li class="main_buttons"><a href="">About</a></li>
+                <li class="main_buttons"><a href="">Resume</a></li>
+                <li class="right, icon_buttons" style="margin-left: auto;"><a href="https://github.com/mgorski760"><i class="fa-brands fa-github"></i></a></li>
+                <li class="icon_buttons"><a href="https://www.linkedin.com/in/marcin-gorski-307a9428a/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="icon_buttons" id="dropdown_icon"><a href="javascript:void(0);" onclick="ToggleDropdown()"><i class="fa-solid fa-bars"></i></li>
             </ul>
         </nav>
 

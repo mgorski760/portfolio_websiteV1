@@ -22,17 +22,6 @@ body{
 /*---[HEADER SECTION]---*/
 
 /*For screensize smaller than 600px, make all the navbar elements besides the first child display: none*/
-@media screen and (max-width: 600px){
-    
-}
-/*When icon is clicked "hamburger" program changes class css to ones listed below*/
-@media screen and (max-width: 600px){
-  
-}
-
-.navbar{
-    border: 2px solid rgb(0, 0, 0);
-}
 
 .navbar ul{
     display: flex;
@@ -52,13 +41,51 @@ body{
     text-decoration: none;
     text-align: center;
     color: black;
+    padding: 2px 7px;
+    text-align: center;
 }
 
-.navbar .right{
-    margin-left: auto;
+.navbar .main_buttons a:hover{
+    background-color: lightgrey;
+    border-radius: 15px;
+    padding: 2px 7px;
+    text-align: center;
+    
 }
 
+.navbar .logo{
+    font-weight: 500;
+    font-size: 1.5em;
+    padding: 0px;
+    
+}
 
+.navbar .main_buttons{
+    margin-top: 8px;
+}
+
+.navbar .icon_buttons{
+    font-size: 1.4em;
+}
+
+.navbar #dropdown_icon{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .navbar .main_buttons{display: none;}
+
+    .navbar #dropdown_icon{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .navbar.responsive .main_buttons{
+        display: block;
+        flex-direction: column;
+    }
+}
 
 /*---[MAIN]---*/
 
