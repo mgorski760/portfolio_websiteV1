@@ -23,7 +23,7 @@ body{
 
 /*For screensize smaller than 600px, make all the navbar elements besides the first child display: none*/
 
-.navbar ul{
+.navbar .main_navlist{
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -32,12 +32,12 @@ body{
     padding-right: 10px;
 }
 
-.navbar li{
+.navbar .main_navlist li{
     margin-left: 5px;
     margin-right: 5px;
 }
 
-.navbar a{
+.navbar  a{
     text-decoration: none;
     text-align: center;
     color: black;
@@ -46,11 +46,11 @@ body{
 }
 
 .navbar .main_buttons a:hover{
-    background-color: lightgrey;
+    background-color: rgb(30,144,255);
+    color: white;
     border-radius: 15px;
     padding: 2px 7px;
     text-align: center;
-    
 }
 
 .navbar .logo{
@@ -60,31 +60,58 @@ body{
     
 }
 
-.navbar .main_buttons{
+.navbar .main_navlist .main_buttons{
     margin-top: 8px;
 }
 
-.navbar .icon_buttons{
+.navbar .main_navlist .icon_buttons{
     font-size: 1.4em;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
-.navbar #dropdown_icon{
+.navbar .main_navlist .icon_buttons a{
+    padding: 0px;
+}
+
+.navbar .main_navlist .dropdown_icon{
     display: none;
+    font-size: 1.4em;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.vertical_navlist{
+    border-bottom: 2px solid rgb(147, 147, 147);
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.vertical_navlist li{
+    padding: 2px 7px; 
+}
+
+
+.vertical_navlist a{
+    padding: 0px;
 }
 
 @media screen and (max-width: 600px){
     .navbar .main_buttons{display: none;}
 
-    .navbar #dropdown_icon{
-        display: block;
+    .navbar .main_navlist .dropdown_icon{
+        display: flex;
     }
 }
 
 @media screen and (max-width: 600px){
-    .navbar.responsive .main_buttons{
-        display: block;
-        flex-direction: column;
-    }
+   .navbar.responsive .vertical_navlist{
+        display: flex;
+   }
 }
 
 /*---[MAIN]---*/
