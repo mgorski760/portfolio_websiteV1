@@ -131,13 +131,15 @@ and display dropdown icon (hamburger)*/
 /*ABOUT SECTION*/
 
 
-.aboutme_container{
+.aboutme_section{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .website_title{
-    text-align: center;
+    text-align: left;
     font-size: 2.0em;
 }
 
@@ -150,12 +152,36 @@ and display dropdown icon (hamburger)*/
 }
 
 .aboutme_content{
-    text-align: center;
-    max-width: 750px;
+    text-align: left;
+    max-width: 600px;
     margin-right: 25px;
     margin-left: 25px;
-    align-self: center;
+    align-self: left;
     padding: 5px;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+/*O
+n mobile devices, change the aboutme to align as column and to adjust the title to be on top of
+image
+*/
+@media screen and (max-width: 600px){
+    .aboutme_section{
+        flex-direction: column;
+    }
+
+    .website_title{
+        order: 1;
+    }
+    
+    .aboutme_selfimage{
+        order: 2;
+    }
+
+    .aboutme_content{
+        order: 3;
+    }
 }
 
 /*STACK SECTION*/
