@@ -162,6 +162,11 @@ and display dropdown icon (hamburger)*/
     font-weight: 400;
 }
 
+.website_title_mobile{
+    display: none;
+    font-size: 2.0em;
+}
+
 /*O
 n mobile devices, change the aboutme to align as column and to adjust the title to be on top of
 image
@@ -172,6 +177,13 @@ image
     }
 
     .website_title{
+        display: none;
+    }
+
+    .website_title_mobile{
+        display: block;
+        text-align: center;
+        font-size: 2.0em;
         order: 1;
     }
     
