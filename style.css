@@ -53,9 +53,13 @@ body{
     text-align: center;
 }
 
+.navbar .icon_buttons a:hover{
+    color: rgb(30,144,255);
+}
+
 .navbar .logo{
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.6em;
     padding: 0px;
     color: rgb(0, 0, 0);   
 }
@@ -65,7 +69,7 @@ body{
 }
 
 .navbar .main_navlist .icon_buttons{
-    font-size: 1.4em;
+    font-size: 1.5em;
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -130,12 +134,12 @@ and display dropdown icon (hamburger)*/
 
 /*ABOUT SECTION*/
 
-
 .aboutme_section{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 75px;
+    margin-bottom: 75px;
 }
 
 .website_title{
@@ -196,10 +200,47 @@ image
     }
 }
 
-/*STACK SECTION*/
+/*MYSTACK SECTION*/
 
-.mystack_container{
-    background-color: rgb(241, 241, 241);
+.mystack_section{
+    overflow: hidden;
+    background-color: rgba(138, 138, 138, 0.318);
+    white-space: nowrap;
+    border: 4px solid rgb(196, 196, 196);
+    border-radius: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.mystack_slider{
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    animation: 15s slide infinite linear;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.mystack_slider_logos{
+    margin: 0 40px;
+    max-height: 100px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translate(-100%);
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .mystack_section{
+        margin-right: 17px;
+        margin-left: 17px;
+    }
 }
 
 /*---[FOOTER]*/
