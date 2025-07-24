@@ -106,7 +106,7 @@ body{
     list-style-type: none;
     margin-top: 0px;
     padding: 0px;
-    z-index: 1;    
+    z-index: 1;  
 }
 
 .vertical_navlist li{
@@ -179,10 +179,6 @@ and display dropdown icon (hamburger)*/
     font-size: 2.0em;
 }
 
-/*O
-n mobile devices, change the aboutme to align as column and to adjust the title to be on top of
-image
-*/
 @media screen and (max-width: 600px){
     .aboutme_section{
         flex-direction: column;
@@ -302,7 +298,7 @@ image
     width:15px;
     height: 15px;
     border-radius: 45px;
-    border: 3px solid rgb(69, 69, 69);
+    border: 3px solid rgba(0, 0, 0, 0.459);
     float: left;
 }
 
@@ -325,25 +321,83 @@ image
 
 /*MYPROJECTS SECTION*/
 
-
-
 .myprojects_grid_container{
     display: grid;
     margin: auto;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 15px;
-    max-width: 1400px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
     justify-content: center;
+    
 }
 
 .myprojects_card{
-    height: 400px;
-    border-radius: 30px;
-    background: rgb(249, 249, 249);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+    z-index: 1;
+    border-radius: 8px;
+    background-color: #011522;
+    
+}
+
+.myprojects_card_content{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 20px;
+    color: white;
+}
+
+.project_text{
+    margin-right: 5px;
 }
 
 
+.tools{
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.circle{
+    padding: 0 4px;
+}
+
+.box{
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.red {
+ background-color: hsl(1, 100%, 68%);
+}
+
+.yellow {
+ background-color: hsl(39, 100%, 63%);
+}
+
+.green {
+ background-color: hsl(143, 100%, 40%);
+}
+
+.myprojects_card_button{
+    height: 35px;
+    width: 140px;
+    margin: 0px 0px 20px 20px;
+    
+    border-radius: 15px;
+    border: 2px solid rgba(141, 141, 141, 0.586);
+    background-color: rgb(68, 68, 68);
+    color: white;
+    transition: background-color 0.2s ease;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.myprojects_card_button:hover{
+    background-color: rgb(30,144,255);
+}
 
 @media screen and (max-width: 1400px){
     .myprojects_grid_container{

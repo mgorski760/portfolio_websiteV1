@@ -8,14 +8,13 @@
     <script src="https://kit.fontawesome.com/964931fdcc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <header>
         <nav class="navbar" id="navigation">
             <ul class="main_navlist">
                 <li><span class="logo">Marcin Gorski</span></li>
                 <li class="main_buttons"><a href="">Home</a>
                 <li class="main_buttons"><a href="">About</a></li>
-                <li class="main_buttons"><a href="">Resume</a></li>
+                    <li class="main_buttons"><a href="">Resume</a></li> 
                 <li class="right, icon_buttons" style="margin-left: auto;"><a href="https://github.com/mgorski760"><i class="fa-brands fa-github"></i></a></li>
                 <li class="icon_buttons"><a href="https://www.linkedin.com/in/marcin-gorski-307a9428a/"><i class="fa-brands fa-linkedin"></i></a></li>
                 <li class="icon_buttons, dropdown_icon"><a style="padding: 0px;" href="javascript:void(0);" onclick="ToggleDropdown()"><i class="fa-solid fa-bars"></i></li>
@@ -91,22 +90,25 @@ I'm currently focusing on Frontend Development while also exploring Backend prog
             </div>
             <div class="timeline_container">
                 <div class="timeline_card">
-                    <div class="pin" style="background-color: rgb(20, 194, 252);"></div>
+                    <div class="pin" style="background-color: rgba(0, 191, 255, 0.938);"></div>
                     <div style="margin-left: 20px;">
                         <h3>Tech Specialist (Computer Concepts USA)</h3>
                         <h4 style="padding: 0px; margin: 0px; margin-left: 15px; color:rgb(157, 157, 157)">[May 2025 - August 2025]</h4>
                         <ul>
-                            <li>Responsible for safeguarding 500+ client endpoints using software such as Huntress and Malwarebytes Threatdown.</li>
-                            <li>Fulfilled IT/Cybersecurity tickets using Autotask; assisting and providing feedback regarding best practices.</li>
-                            <li>Updated client websites using HTML, CSS and Javascript per ticket request.</li>
-                            <li>Enforced DKIM, SPF, and DMARC complacency to client domains and emails to reduce deliverbility issues using Sendmarc.</li>
-                            <li>Worked with Microsoft 365 portals, ensuring proper email and data backup using Dropsuite.</li> 
-                            <li>Worked with clients onsite, installing new computers, printers, networks devices, and miscellous IoT devices.</li>
+                            <li>Safeguarded 500+ client endpoints using security software including Huntress and Malwarebytes ThreatDown.</li>
+                            <li>Resolved IT and cybersecurity tickets via Autotask by troubleshooting issues, assisting users, and providing guidance on best practices.</li>
+                            <li>Improved the aesthetics and usability of client websites by updating HTML, CSS, and JavaScript code.</li>
+                            <li>Implemented DKIM, SPF, and DMARC compliance for client domains and email systems using Sendmarc to reduce deliverability issues.</li>
+                            <li>Managed Microsoft 365 portals and ensured secure email and data backups using Dropsuite.</li>
+                            <li>Performed on-site installations of computers, printers, network devices, and various IoT equipment for clients.</li>
+                            <li>Assisted with onboarding and training of new Tech Specialists, offering feedback and sharing best practices.</li>
+                            <li>Created and developed proposals for client projects.</li>
+
                     </div>
                 </div>
 
                 <div class="timeline_card">
-                    <div class="pin" style="background-color: rgb(252, 24, 20);"></div>
+                    <div class="pin" style="background-color: hsl(1, 100%, 68%);"></div>
                     <div style="margin-left: 20px;">
                         <h3>Student (University Of Illinois Chicago)</h3>
                         <h4 style="padding: 0px; margin: 0px; margin-left: 15px; color:rgb(157, 157, 157)">[August 2024 - Current]</h4>
@@ -119,20 +121,20 @@ I'm currently focusing on Frontend Development while also exploring Backend prog
                 </div>
                  
                 <div class="timeline_card">
-                    <div class="pin" style="background-color: rgb(237, 245, 6);"></div>
+                    <div class="pin" style="background-color: hsl(39, 100%, 63%);"></div>
                     <div style="margin-left: 20px;">
                         <h3>Intern (Computer Concepts USA)</h3>
                         <h4 style="padding: 0px; margin: 0px; margin-left: 15px; color:rgb(157, 157, 157)">[November 2023 - May 2024]</h4>
                         <ul>
                             <li>Conducted PC and Mac troubleshooting. Repaired and replaced various hardware components.</li>
-                            <li>Delivered Client Computers and Printers. Conducted onsite installations and configurations.</li>
+                            <li>Delivered client computers and printers. Conducted onsite installations and configurations.</li>
                             <li>Conducted data entry and adminstrative work within the main office using M365 products and Autotask</li>
                         </ul>
                     </div>
                 </div>
 
                  <div class="timeline_card">
-                    <div class="pin" style="background-color: rgb(6, 245, 30);"></div>
+                    <div class="pin" style="background-color: hsl(143, 100%, 40%);"></div>
                     <div style="margin-left: 20px;">
                         <h3>Office Clerk (PG Crack Expert)</h3>
                         <h4 style="padding: 0px; margin: 0px; margin-left: 15px; color:rgb(157, 157, 157)">[May 2022 - September 2024]</h4>
@@ -151,15 +153,60 @@ I'm currently focusing on Frontend Development while also exploring Backend prog
         <br>
 
         <section class="myprojects_section">
-
+            <h2 style="font-size: 1.7em; text-align: center;">Projects 💼</h2>
             <div class="myprojects_grid_container">
-                <div class="myprojects_card"></div>
-                <div class="myprojects_card"></div>
-                <div class="myprojects_card"></div>
-                <div class="myprojects_card"></div>
+        
+                <div class="myprojects_card">
+                    <div class="tools">
+                        <div class="circle">
+                        <span class="red box"></span>
+                        </div>
+                        <div class="circle">
+                        <span class="yellow box"></span>
+                        </div>
+                        <div class="circle">
+                        <span class="green box"></span>
+                        </div>
+                    </div>
+                    <div class="myprojects_card_content">
+                        <div class="project_text">
+                            <h3>Traffic Light Data</h3>
+                            <p>Analyzed intersection camera data from the City of Chicago using C++, providing trends displaying peak violation seasons and locations.</p>
+                        </div>
+                        <img src="images/camera.jpg" style="width: 200px; height: 200px; border: 2px solid rgb(176, 176, 176); border-radius: 15px;">
+                    </div>
+                    <a href="https://github.com/mgorski760/Traffic-Light-Data-Anaylsis"><button class="myprojects_card_button">Repository <i class="fa-brands fa-github"></i></button></a>
+                </div>
+                
+                 <div class="myprojects_card">
+                    <div class="tools">
+                        <div class="circle">
+                        <span class="red box"></span>
+                        </div>
+                        <div class="circle">
+                        <span class="yellow box"></span>
+                        </div>
+                        <div class="circle">
+                        <span class="green box"></span>
+                        </div>
+                    </div>
+                    <div class="myprojects_card_content">
+                        <div class="project_text">
+                            <h3>Client Websites (CCUSA)</h3>
+                            <p>Provided additional features and pages using HTML, CSS and Javascript.</p>
+                        </div>
+                        <img src="images/browser.png" style="width: 185px; height:185px; padding: 10px; border: 2px solid rgb(176, 176, 176); border-radius: 15px; background-color: white;;">
+                    </div>
+                    <div style="margin: 0px 0px 20px 20px; height: 35px"></div>
+                </div>
+                
+                </div>
             </div>
             
         </section>
+
+        <br>
+
     </main>
 
     <footer>
