@@ -12,9 +12,9 @@
         <nav class="navbar" id="navigation">
             <ul class="main_navlist">
                 <li><span class="logo">Marcin Gorski</span></li>
-                <li class="main_buttons"><a href="">Home</a>
-                <li class="main_buttons"><a href="">About</a></li>
-                    <li class="main_buttons"><a href="">Resume</a></li> 
+                <li class="main_buttons"><a href="#home">Home</a>
+                <li class="main_buttons"><a href="#about">About</a></li>
+                <li class="main_buttons"><a href="#contact">Contact</a></li>
                 <li class="right, icon_buttons" style="margin-left: auto;"><a href="https://github.com/mgorski760"><i class="fa-brands fa-github"></i></a></li>
                 <li class="icon_buttons"><a href="https://www.linkedin.com/in/marcin-gorski-307a9428a/"><i class="fa-brands fa-linkedin"></i></a></li>
                 <li class="icon_buttons, dropdown_icon"><a style="padding: 0px;" href="javascript:void(0);" onclick="ToggleDropdown()"><i class="fa-solid fa-bars"></i></li>
@@ -23,7 +23,7 @@
             <ul class="vertical_navlist">
                 <li><a href="">Home</a>
                 <li><a href="">About</a></li>
-                <li><a href="">Resume</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
 
@@ -42,7 +42,7 @@
 
     <main>
        
-        <section class="aboutme_section">    
+        <section class="aboutme_section" id="home">    
 
             <h1 class="website_title_mobile">Hello World! 👋</h1>
 
@@ -50,7 +50,7 @@
                 <h1 class="website_title">Hello World! 👋</h1>
                 <p>Hello! I'm Marcin Gorski, a sophomore at the University of Illinois Chicago majoring in Computer Science with a concentration in Software Engineering.
 Alongside my studies, I work as a Tech Specialist at Computer Concepts USA, where I supported clients using cybersecurity and IT solutions such as Huntress, Acronis, Entra, and Malwarebytes ThreatDown.
-I'm currently focusing on Frontend Development while also exploring Backend programming to broaden my technical skill set. A fun fact about me is that I used to run a Marketing Business!
+I'm currently focusing on frontend development while also exploring backend programming to broaden my technical skill set. A fun fact about me is that I used to run a Marketing Business!
                 </p>
             </div>
             <img class="aboutme_selfimage" src="images/marcin2.jpg">
@@ -84,7 +84,7 @@ I'm currently focusing on Frontend Development while also exploring Backend prog
         </section>
 
 
-        <section class="timeline_section">
+        <section class="timeline_section" id ="about">
             <div class="title_container">
                 <h2 style=" font-size: 1.7em; padding: 0px; margin: 0px; margin-top: 16px; ">Timeline 🗓️</h2>
             </div>
@@ -124,7 +124,7 @@ I'm currently focusing on Frontend Development while also exploring Backend prog
                     <div class="pin" style="background-color: hsl(39, 100%, 63%);"></div>
                     <div style="margin-left: 20px;">
                         <h3>Intern (Computer Concepts USA)</h3>
-                        <h4 style="padding: 0px; margin: 0px; margin-left: 15px; color:rgb(157, 157, 157)">[November 2023 - May 2024]</h4>
+                        <h4 style="padding: 0px; margin: 0px; margin-left: 15px; color:rgb(157, 157, 157)">[November 2023 - May 2025]</h4>
                         <ul>
                             <li>Conducted PC and Mac troubleshooting. Repaired and replaced various hardware components.</li>
                             <li>Delivered client computers and printers. Conducted onsite installations and configurations.</li>
@@ -153,7 +153,7 @@ I'm currently focusing on Frontend Development while also exploring Backend prog
         <br>
 
         <section class="myprojects_section">
-            <h2 style="font-size: 1.7em; text-align: center;">Projects 💼</h2>
+            <h2 style="font-size: 1.7em; text-align: center; padding: 10px;">Projects 💼</h2>
             <div class="myprojects_grid_container">
         
                 <div class="myprojects_card">
@@ -177,54 +177,47 @@ I'm currently focusing on Frontend Development while also exploring Backend prog
                     </div>
                     <a href="https://github.com/mgorski760/Traffic-Light-Data-Anaylsis"><button class="myprojects_card_button">Repository <i class="fa-brands fa-github"></i></button></a>
                 </div>
-                
-                 <div class="myprojects_card">
-                    <div class="tools">
-                        <div class="circle">
-                        <span class="red box"></span>
-                        </div>
-                        <div class="circle">
-                        <span class="yellow box"></span>
-                        </div>
-                        <div class="circle">
-                        <span class="green box"></span>
-                        </div>
-                    </div>
-                    <div class="myprojects_card_content">
-                        <div class="project_text">
-                            <h3>Client Websites (CCUSA)</h3>
-                            <p>Provided additional features and pages using HTML, CSS and Javascript.</p>
-                        </div>
-                        <img src="images/browser.png" style="width: 185px; height:185px; padding: 10px; border: 3px solid rgb(176, 176, 176); border-radius: 15px; background-color: white;;">
-                    </div>
-                    <div style="margin: 0px 0px 20px 20px; height: 35px"></div>
-                </div></div>
             </div>
         </section>
 
         <br>
 
-        <section class="contactme_section">
+        <section class="contactme_section" id="contact">
             <h2 style="font-size: 1.7em; text-align: center;">Contact Me ✉️</h2>
 
             <div class="contactme_container">
-                <div class="contactme_card">
-                    <h4><i class="fa-regular fa-envelope contactme_icon"></i> Email</h4>
-                    <p>myemail@email.notreal</p>
-                </div>
-                <div class="contactme_card">
-                    <h4><i class="fa-brands fa-linkedin contactme_icon"></i> LinkedIn</h4>
-                    <p> in/marcin-gorski-307a9428a</p>
-                </div>
+                <a href="mailto: marcingorskidev@gmail.com" style="text-decoration: none;">
+                    <div class="contactme_card">
+                        <h4><i class="fa-regular fa-envelope contactme_icon"></i> Email</h4>
+                        <p>marcingorskidev@gmail.com</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/marcin-gorski-307a9428a/" style="text-decoration: none;">
+                    <div class="contactme_card">
+                        <h4><i class="fa-brands fa-linkedin contactme_icon"></i> LinkedIn</h4>
+                        <p> in/marcin-gorski-307a9428a</p>
+                    </div>
+                </a>
             </div>
         </section>
     </main>
 
     <br>
 
-    <footer>
-        <div class="footer"></div>
+    <footer style="height: 128px; background-color: hsla(205, 94%, 7%, 0.757);">
+            <div class="footer_container">
+                <div class="footer_icons">
+                    <ul>
+                        <li><a href="mailto: marcingorskidev@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/marcin-gorski-307a9428a/"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/mgorski760"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                    <p style="margin: 10px; font-size: 0.8em;"></i>© Marcin Gorski. All rights reserved.</p>
+                    <i class="fa-solid fa-frog fa-bounce frog" style="--fa-bounce-land-scale-x: 1.2;--fa-bounce-land-scale-y: .8;--fa-bounce-rebound: 5px;"></i>
+                </div>
+            </div>
     </footer>
+
     
 </body>
 </html>

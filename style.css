@@ -10,7 +10,9 @@
     src: url(fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf)
 }
 
-
+html { 
+    scroll-behavior: smooth; 
+}
 
 body{
     background-color: rgb(255, 255, 255);
@@ -110,8 +112,8 @@ body{
 }
 
 .vertical_navlist li{
-    padding: 2px 7px; 
-    margin-top: 3px;
+    padding: 8px 15px; 
+    margin: 5px 0px;
 }
 
 
@@ -139,7 +141,7 @@ and display dropdown icon (hamburger)*/
 
 /*---[MAIN]---*/
 
-/*ABOUT SECTION*/
+/*HOME SECTION*/
 
 .aboutme_section{
     display: flex;
@@ -329,7 +331,7 @@ and display dropdown icon (hamburger)*/
     gap: 20px;
     max-width: 1200px;
     justify-content: center;
-    
+    margin-bottom: 50px;
 }
 
 .myprojects_card{
@@ -337,6 +339,8 @@ and display dropdown icon (hamburger)*/
     border-radius: 8px;
     background-color: #011522;
     transition: 0.1s;
+    max-width: 700px;
+    margin: auto;
 }
 
 .myprojects_card_content{
@@ -411,9 +415,10 @@ and display dropdown icon (hamburger)*/
 
 .contactme_container{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     margin: auto;
-    max-width: 900px;
+    max-width: 1100px;
+    margin-bottom: 50px;
 }
 
 .contactme_card{
@@ -463,10 +468,54 @@ and display dropdown icon (hamburger)*/
         max-width: 450px;
     }
 }
+
 /*FOOTER*/
 
-.footer{
+.footer_section{
     height: 128px;
-    background-color: rgba(0, 0, 0, 0.347);
+    background-color: hsla(205, 94%, 7%, 0.757);
+}
+
+.footer_container{
+    max-width: 400px;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.354);
+    text-align: center;
+    padding: 2px;
+    margin-top: 25px;
+}
+
+.footer_icons{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 7px;
+}
+
+.footer_icons ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: auto;
+    padding: 0px;
+    margin: 10px;
+}
+
+.footer_icons a{
+    padding: 5px;
+    font-size: 1.1em;
+    margin: 0px 5px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.354);
+    transition: 0.3s;
+}
+
+.footer_icons a:hover{
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.799);
+}
+
+.frog{
+    margin: 0px;
+    padding: 5px;
 }
 
