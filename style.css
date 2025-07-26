@@ -327,8 +327,9 @@ and display dropdown icon (hamburger)*/
 .myprojects_grid_container{
     display: grid;
     margin: auto;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    min-width: 150;
     max-width: 1200px;
     justify-content: center;
     margin-bottom: 50px;
@@ -345,11 +346,29 @@ and display dropdown icon (hamburger)*/
 
 .myprojects_card_content{
     display: grid;
-    grid-template-rows: 50px 150px 50px;
+    grid-template-rows: 50px auto 50px;
     grid-template-columns: 400px 200px;
     padding: 5px 20px;
     padding-right: 25px;
     color: white;
+}
+
+.myprojects_card_content .title{
+grid-area: 1 / 1;
+}
+
+.myprojects_card_content .image{
+    grid-area: 1/2;
+}
+
+.myprojects_card_content .content{
+    grid-area: 2/1
+}
+
+.myprojects_card_content .button{
+    grid-area: 4/1;
+    margin: 0px;
+    padding: 10px;
 }
 
 .tools{
@@ -411,11 +430,12 @@ and display dropdown icon (hamburger)*/
     .myprojects_card{
         margin-right: 5px;
         margin-left: 5px;
+        width: auto;
     }
 
     .myprojects_card_content{
         grid-template-rows: 50px 200px auto 50px;
-        grid-template-columns: minmax(200px, auto);
+        grid-template-columns: minmax(150px, auto);
         justify-content: center;
         place-items: center;
         margin: auto;
@@ -433,8 +453,6 @@ and display dropdown icon (hamburger)*/
     .myprojects_card_content .content{
         grid-area: 3/1
     }
-
-    
 
     .myprojects_card_content .button{
         grid-area: 4/1;
