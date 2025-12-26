@@ -48,9 +48,9 @@
 
             <div class="aboutme_content">
                 <h1 class="website_title">Hello World! 👋</h1>
-                <p>Hello! I'm Marcin Gorski, a sophomore at the University of Illinois Chicago majoring in Computer Science with a concentration in Software Engineering.
-Alongside my studies, I work as a Tech Specialist at Computer Concepts USA, where I supported clients using cybersecurity and IT solutions such as Huntress, Acronis, Entra, and Malwarebytes ThreatDown.
-I'm currently focusing on frontend development while also exploring backend programming to broaden my technical skill set. A fun fact about me is that I used to run a Marketing Business!
+                <p>Hello! I'm Marcin Gorski, a sophomore at the University of Illinois Chicago majoring in Computer Science.
+Alongside my studies, I work as a Technology Specialist at Computer Concepts USA, where I supported clients using cybersecurity and IT solutions such as Huntress, Acronis, Entra, and Malwarebytes ThreatDown.
+I'm currently focusing on Frontend development while also exploring Backend programming to broaden my technical skill set. 
                 </p>
             </div>
             <img class="aboutme_selfimage" src="images/marcin2.jpg">
@@ -160,38 +160,57 @@ I'm currently focusing on frontend development while also exploring backend prog
             <h2 style="font-size: 1.7em; text-align: center; padding: 10px;">Projects 💼</h2>
             <div class="myprojects_container">
                 <div class="myprojects_grid">
-                    <div class="card">
-                            
+                   <div class="card">  
                         <div class="card_content">
-                            <h3>Chicago Traffic Analysis</h3>
+                            <h3>Chicago Traffic Analysis</h3 >
                             <div class="stack_container">
-                                <img src="images/python.png"  class="stack_logos">
-                                <img src="images/numpy.png"  class="stack_logos">
-                                <img src="images/pandas_white.svg"  class="stack_logos">
+                                <div class="stack_item">
+                                    <img src="images/cpp_logo.png"  class="stack_logos">
+                                    <p class="stack_name">C++</p>
+                                </div>
                             </div>
                             <img class= "card_image" src="images/camera.jpg" style="display: block; margin-left: auto; margin-right: auto;">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, sapiente tenetur at veritatis nisi itaque, soluta, ratione eos voluptatum optio numquam assumenda qui rerum. Assumenda placeat sapiente reprehenderit exercitationem veniam.</p>
+                            <p>Constructed a C++ data analysis tool to process City of Chicago traffic violation .txt records. Implemented file stream processing and OOP to categorize data by location and date, successfully identifying seasonal peaks and high-frequency violation zones.</p>
                         </div>
                     </div>
-                
-                    <div class="card">
-                            <img class= "card_image" src="images/camera.jpg" style="display: block; margin-left: auto; margin-right: auto;">
-                        <div class="card_content">
-                            <h3>Project Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, sapiente tenetur at veritatis nisi itaque, soluta, ratione eos voluptatum optio numquam assumenda qui rerum. Assumenda placeat sapiente reprehenderit exercitationem veniam.</p>
-                        </div>
-                    </div>
-                
-                    <div class="card">
-                            <img class= "card_image" src="images/MTA.jpg" style="display: block; margin-left: auto; margin-right: auto;">
-                        <div class="card_content">
-                            <h3>MTA Ridership Analysis</h3>
-                            <p>Python-based data pipeline to analyze post-COVID transit trends. Utilized custom scripts to parse and clean unsorted CSV datasets, structuring them into Pandas DataFrames for time-series analysis. Aggregated daily, monthly, and yearly metrics across MTA bus and rail networks, creating Matplotlib visualizations that highlight urban transit recovery patterns</p>
 
+                    <div class="card">      
+                        <div class="card_content">
+                            <h3>MTA Post Covid Ridership Analysis</h3 >
+                            <div class="stack_container">
+                                <div class="stack_item">
+                                    <img src="images/python.png"  class="stack_logos">
+                                    <p class="stack_name">Python</p>
+                                </div>
+                                <div class="stack_item">
+                                      <img src="images/numpy.png"  class="stack_logos">
+                                    <p class="stack_name">Numpy</p>
+                                </div>
+                                <div class="stack_item">
+                                    <img src="images/pandas_white.svg"  class="stack_logos">
+                                    <p class="stack_name">Pandas</p>
+                                </div>    
+                            </div>
+                            <img class= "card_image" src="images/MTA.jpg" style="display: block; margin-left: auto; margin-right: auto;">
+                            <p>Data pipeline to analyze post-COVID MTA ridership trends. Developed custom scripts to parse and clean unsorted CSV datasets, structuring them into Pandas DataFrames for time-series analysis. Aggregated daily, monthly, and yearly metrics across all bus and rail organizations, culminating in a series of Matplotlib visualizations that highlight urban transit recovery patterns.</p>
                         </div>
                     </div>
-                </div>
-            
+                    
+                    <div class="card">      
+                        <div class="card_content">
+                            <h3>UIC Campus Optimized Router</h3 >
+                            <div class="stack_container">
+                                <div class="stack_item">
+                                    <img src="images/cpp_logo.png"  class="stack_logos">
+                                    <p class="stack_name">C++</p>
+                                </div>
+                            </div>
+                            <img class= "card_image" src="images/uic.png" style="display: block; margin-left: auto; margin-right: auto;">
+                            <p>Implemented Dijsktra's algorithm to find optimal routes between UIC campus buildings. Converted JSON data from OpenStreetMap into custom graph classes to effectively create/update relations between vectices. Utilized GoogleTest unit testing to observe edges cases.</p>
+                        </div>
+                    </div>
+
+                    
             </div>
         </section>
 
